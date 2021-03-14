@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/4ddc94742b.js" crossorigin="anonymous"></script>
+
+    <title>Simular Financiamento</title>
+  </head>
+  <body>
+    <div class="main">
+      <header class="cabecalho">
+        <div class="icon-img-header">
+          <img src="img/icon-calculator.png" alt="Calculadora" />
+        </div>
+        <h1>Simulação de Financiamentos</h1>
+      </header>
+      <main class="conteudo">
+        <section class="simulador">
+          <h2>Informe os valores</h2>
+          <form class="form-simulador" id="form-simulacao">
+            <label class="custom-label">
+              Valor
+              <input
+                type="number"
+                value="200000"
+                placeholder="R$ 100"
+                id="valor-simulador"
+              />
+            </label>
+
+            <label class="custom-label">
+              Prazo (anos)
+              <input
+                type="number"
+                value="20"
+                placeholder="20"
+                id="prazo-simulador"
+              />
+            </label>
+
+            <label class="custom-label">
+              Juros ao ano
+              <input
+                type="number"
+                value="0.08"
+                placeholder="0.08"
+                id="juros-ano-simulador"
+              />
+            </label>
+            <div class="btn-action-group">
+              <div class="btn-simular" id="simular">Simular</div>
+            </div>
+          </form>
+        </section>
+
+        <section class="resultado">
+          <h2>Resultado</h2>
+          <div class="card-group">
+            <div class="card prazo">
+              <div class="card-title">
+                <div class="card-title-img">
+                  <img src="img/clock.png" alt="Prazo" />
+                </div>
+                <h3 class="card-title-text">Prazo (meses)</h3>
+              </div>
+              <div class="card-content">Simule..</div>
+            </div>
+
+            <div class="card juros-ao-mes">
+              <div class="card-title">
+                <div class="card-title-img">
+                  <img src="img/percentage.png" alt="Juros ao mes" />
+                </div>
+                <h3 class="card-title-text">Juros ao mês</h3>
+              </div>
+              <div class="card-content">Simule..</div>
+            </div>
+
+            <div class="card juros-acumulados">
+              <div class="card-title">
+                <div class="card-title-img">
+                  <img
+                    src="img/more-percentage-plus-button.png"
+                    alt="Juros acumulados"
+                  />
+                </div>
+                <h3 class="card-title-text">Juros acumulados</h3>
+              </div>
+              <div class="card-content">Simule..</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tabela-resultados">
+          <h2>Detalhamento</h2>
+          <div class="sem-conteudo">
+            <div class="sem-conteudo-img"><i class="fas fa-mug-hot"></i></div>
+            <div class="sem-conteudo-legenda">Simule para ver o detalhamento..</div>
+          </div>
+          <table class="table-resultado disabled">
+            <thead>
+              <tr>
+                <th>Prestação</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="table-conteudo" class="">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
